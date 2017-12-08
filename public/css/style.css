@@ -1,13 +1,13 @@
 /***
  StyleSheet.scss
  Author: Shadow Grimes
- ***//* Colour *//* Fonts *//* First setting clear the user agent default setting *//* reset to "0" to avoid broswer setting */* {
+ ***//*** Layout ***//*** Colour ***//*** Fonts ****//* First setting clear the user agent default setting *//* reset to "0" to avoid broswer setting */* {
   margin: 0px auto;
   padding: 0px;
 }
-/***             ***
- main page
- ***               ***/.container {
+/*********************
+ Main page
+ **********************/.container {
   margin: 0px auto;
 }
 /* Header */@media screen and (min-width: 768px) {
@@ -18,13 +18,19 @@
     position: fixed;
     z-index: 3;
   }
-  .header p {
+  .header a {
     padding: 10px;
     color: #49075e;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1em;
     float: left;
+  }
+  .header a:hover {
+    color: rgba(73, 7, 94, 0.7);
+  }
+  .header a:link {
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -35,13 +41,19 @@
     position: fixed;
     z-index: 3;
   }
-  .header p {
+  .header a {
     padding: 10px;
     color: #49075e;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     font-size: 0.8em;
     float: left;
+  }
+  .header a:hover {
+    color: rgba(73, 7, 94, 0.7);
+  }
+  .header a:link {
+    text-decoration: none;
   }
 }
 /* Content */@media screen and (min-width: 768px) {
@@ -194,9 +206,9 @@ label {
 .form-control-file {
   color: white;
 }
-/***         ***
- Profile Page
- ***          ***/.profile-block {
+/*********************
+ Profile page
+ **********************/.profile-block {
   background-color: white;
   border: 5px solid grey;
 }
@@ -252,9 +264,9 @@ label {
   font-family: Helvetica, serif;
   font-size: 1em;
 }
-/***    ***
- footer
- ***      ***/.footer {
+/*********************
+ Footer
+ **********************/.footer {
   margin: 0px auto;
   padding: 20px;
   text-align: center;

@@ -25,8 +25,8 @@ Route::post('add_profile_action', function () {
     $position = request('position');
     $email = request('email');
     $biography = request('biography');
-    dd($image);   //debugger
-    $image = request('image');
-
-    return view('profile')->with('firstname', $firstname)->with('lastname', $lastname)->with('position', $position)->with('email', $email)->with('biography', $biography)->with('image', $image);
+    $image_path = request()->file('image')->store('researcher_images', 'public');
+    // dd($image_path);
+    
+    return view('profile')->with('firstname', $firstname)->with('lastname', $lastname)->with('position', $position)->with('email', $email)->with('biography', $biography)->with('image', $image_path);
 });

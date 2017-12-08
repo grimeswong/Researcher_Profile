@@ -5,7 +5,10 @@
 
 ***/
 
-/* Colour */
+/*** Layout ***/
+$fullwidth: 100%;
+
+/*** Colour ***/
 $maincolor1: rgb(73, 7, 94);    //purple
 $maincolor2: white;
 $maincolor3: grey;
@@ -14,11 +17,12 @@ $bordercolor: rgba(73, 7, 94, 0.7);    // purple with opacity
 $boxshadow: $bordercolor;
 $email: rgb(32, 62, 220);
 
-/* Fonts */
+/*** Fonts ****/
 $mainfont1: Helvetica;
 $mainfont2: Arial;
+$mainfont3: Monospace;
 
-$fullwidth: 100%;
+
 
 
 /* First setting clear the user agent default setting */
@@ -28,19 +32,17 @@ $fullwidth: 100%;
     padding: 0px;
 }
 
-/***             ***
+/*********************
 
+      Main page
 
-      main page
-
-
-
-***               ***/
+**********************/
 .container {
     margin:0px auto;
 }
 
 /* Header */
+
 @media screen and(min-width: 768px) {
   .header {
       height:50px;
@@ -48,13 +50,19 @@ $fullwidth: 100%;
       width: $fullwidth;
       position: fixed;
       z-index: 3;
-      p {
+      a {
           padding: 10px;
           color:$maincolor1;
           font-family: $mainfont1, sans-serif;
           font-weight: bold;
           font-size: 1em;
           float:left;
+      }
+      a:hover {
+        color: $bordercolor;
+      }
+      a:link {
+        text-decoration: none;
       }
   }
 }
@@ -66,13 +74,19 @@ $fullwidth: 100%;
       width: $fullwidth;
       position: fixed;
       z-index: 3;
-      p {
+      a {
           padding: 10px;
           color:$maincolor1;
           font-family: $mainfont1, sans-serif;
           font-weight: bold;
           font-size: 0.8em;
           float:left;
+      }
+      a:hover {
+        color: $bordercolor;
+      }
+      a:link {
+        text-decoration: none;
       }
   }
 }
@@ -246,13 +260,11 @@ label {
 
 
 
-/***         ***
+/*********************
 
+      Profile page
 
-    Profile Page
-
-
-***          ***/
+**********************/
 .profile-block {
   background-color: $maincolor2;
   border: 5px solid $maincolor3
@@ -320,11 +332,11 @@ label {
 }
 
 
-/***    ***
+/*********************
 
-    footer
+      Footer
 
-***      ***/
+**********************/
 
 .footer {
   margin:0px auto;

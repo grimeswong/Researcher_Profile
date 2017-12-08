@@ -20,7 +20,7 @@
             <div class="profile-block">
               <div class="row">
                 <div class="col-md-3">
-                  <img class="profile-image" src="/img/grimes.jpg" alt="profile image">
+                  <img class="profile-image" src="{{$image}}" alt="profile image">
                 </div>
                 <div class="col-md-9">
                   <div class="row row-space big-name">
