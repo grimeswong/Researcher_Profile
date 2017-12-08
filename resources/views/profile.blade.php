@@ -15,24 +15,32 @@
   <div class="main-content">
       <p class="main-content-title">Researcher's Profile</p>
 
+
+      <!-- Profile block -->
       <div class="row">
-        <div class="offset-md-2 col-md-8 col-sm-12">
+        <div class="col-md-8 col-xs-12">  <!-- 66% for bigger screen, fullwidth for mobile -->
             <div class="profile-block">
               <div class="row">
-                <div class="col-md-3">
-                  <img class="profile-image" src="{{$image}}" alt="profile image">
+
+                <!-- Left column -->
+                <div class="col-md-4 col-xs-6">
+                  <img class="profile-image" src="{{$image}}" alt="{{$firstname}} profile image">
                 </div>
-                <div class="col-md-9">
-                  <div class="row row-space big-name">
+                <!-- Right column -->
+
+                <div class="content-wrap col-md-8 col-xs-6">
+                  <div class="big-name">
                       {{$firstname}} {{$lastname}}
                   </div>
-                  <div class="row row-space">
-                      {{$position}} | {{$email}}
+                  <div>
+                      {{$position}}
+                      <span class="separator">|</span>
+                      <span class="email">{{$email}}</span>
                   </div>
-                  <div class="row row-space">
+                  <div class="bio-title">
                       Biography
                   </div>
-                  <div class="row row-message">
+                  <div class="bio-message">
                       {{$biography}}
                   </div>
                 </div>
@@ -40,5 +48,6 @@
           </div>
         </div>
       </div>
-  </div>
+
+  </div> <!-- end main content -->
 @endsection
