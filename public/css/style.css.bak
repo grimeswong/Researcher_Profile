@@ -1,67 +1,76 @@
 /***
- StyleSheet.scss
- Author: Shadow Grimes
- ***//* Colour *//* Fonts *//* First setting clear the user agent default setting *//* reset to "0" to avoid broswer setting */* {
+    StyleSheet.scss
+    Author: Shadow Grimes
+
+
+***/
+/* Colour */
+/* Fonts */
+/* First setting clear the user agent default setting */
+/* reset to "0" to avoid broswer setting */
+* {
   margin: 0px auto;
-  padding: 0px;
-}
+  padding: 0px; }
+
 /***             ***
- main page
- ***               ***/.container {
-  margin: 0px auto;
-}
-/* Header */@media screen and (min-width: 768px) {
+
+
+      main page
+
+
+
+***               ***/
+.container {
+  margin: 0px auto; }
+
+/* Header */
+@media screen and (min-width: 768px) {
   .header {
     height: 50px;
     background-color: white;
     width: 100%;
     position: fixed;
-    z-index: 3;
-  }
-  .header p {
-    padding: 10px;
-    color: #49075e;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    float: left;
-  }
-}
+    z-index: 3; }
+    .header p {
+      padding: 10px;
+      color: #49075e;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+      float: left; } }
+
 @media screen and (max-width: 767px) {
   .header {
     height: 50px;
     background-color: white;
     width: 100%;
     position: fixed;
-    z-index: 3;
-  }
-  .header p {
-    padding: 10px;
-    color: #49075e;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 0.8em;
-    float: left;
-  }
-}
-/* Content */@media screen and (min-width: 768px) {
+    z-index: 3; }
+    .header p {
+      padding: 10px;
+      color: #49075e;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 0.8em;
+      float: left; } }
+
+/* Content */
+@media screen and (min-width: 768px) {
   #image {
     height: 700px;
     width: 100%;
     position: relative;
     /* Must use the relative to make the parallex Scrolling */
-    z-index: -1;
-  }
-}
+    z-index: -1; } }
+
 @media screen and (max-width: 767px) {
   #image {
     height: 300px;
     width: 100%;
     position: relative;
     /* Must use the relative to make the parallex Scrolling */
-    z-index: -1;
-  }
-}
+    z-index: -1; } }
+
 @media screen and (min-width: 1201px) {
   #mid-block {
     margin-top: -500px;
@@ -73,9 +82,8 @@
     border-color: rgba(73, 7, 94, 0.7);
     border: 2px;
     box-shadow: 5px 5px 2px rgba(73, 7, 94, 0.7);
-    line-height: 1.5;
-  }
-}
+    line-height: 1.5; } }
+
 @media screen and (max-width: 1200px) {
   #mid-block {
     margin-top: -500px;
@@ -87,9 +95,8 @@
     border-color: rgba(73, 7, 94, 0.7);
     border: 2px;
     box-shadow: 5px 5px 2px rgba(73, 7, 94, 0.7);
-    line-height: 1.5;
-  }
-}
+    line-height: 1.5; } }
+
 @media screen and (max-width: 768px) {
   #mid-block {
     margin-top: -150px;
@@ -101,36 +108,32 @@
     border-color: rgba(73, 7, 94, 0.7);
     border: 2px;
     box-shadow: 5px 5px 2px rgba(73, 7, 94, 0.7);
-    line-height: 1.5;
-  }
-}
+    line-height: 1.5; } }
+
 @media screen and (min-width: 1201px) {
   #mid-title {
     padding: 75px;
     font-size: 3em;
     font-weight: bold;
     color: #49075e;
-    text-align: center;
-  }
-}
+    text-align: center; } }
+
 @media screen and (max-width: 1200px) {
   #mid-title {
     padding: 20px;
     font-size: 3em;
     font-weight: bold;
     color: #49075e;
-    text-align: center;
-  }
-}
+    text-align: center; } }
+
 @media screen and (max-width: 767px) {
   #mid-title {
     padding: 20px;
     font-size: 2em;
     font-weight: bold;
     color: #49075e;
-    text-align: center;
-  }
-}
+    text-align: center; } }
+
 @media screen and (min-width: 768px) {
   .main-content {
     margin-top: -10px;
@@ -139,9 +142,8 @@
     width: 100%;
     background-color: #49075e;
     position: relative;
-    z-index: 1;
-  }
-}
+    z-index: 1; } }
+
 @media screen and (max-width: 767px) {
   .main-content {
     margin-top: -10px;
@@ -150,115 +152,115 @@
     width: 100%;
     background-color: #49075e;
     position: relative;
-    z-index: 1;
-  }
-}
+    z-index: 1; } }
+
 @media screen and (min-width: 768px) {
   .main-content .main-content-title {
     padding: 60px;
     color: white;
     font-size: 3em;
     font-weight: bold;
-    text-align: center;
-  }
+    text-align: center; }
   .main-content .main-content-subtitle {
     color: white;
     font-size: 2em;
     font-weight: bold;
-    text-align: center;
-  }
-}
+    text-align: center; } }
+
 @media screen and (max-width: 767px) {
   .main-content-title {
     padding: 80px;
     color: white;
     font-size: 2em;
     font-weight: bold;
-    text-align: center;
-  }
+    text-align: center; }
   .main-content-subtitle {
     color: white;
     font-size: 2em;
     font-weight: bold;
-    text-align: center;
-  }
-}
+    text-align: center; } }
+
 label {
   color: white;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 #file-upload {
   color: white;
-  padding-bottom: 40px;
-}
+  padding-bottom: 40px; }
+
 .form-control-file {
-  color: white;
-}
+  color: white; }
+
 /***         ***
- Profile Page
- ***          ***/.profile-block {
+
+
+    Profile Page
+
+
+***          ***/
+.profile-block {
   background-color: white;
-  border: 5px solid grey;
-}
+  border: 5px solid grey; }
+
 @media screen and (min-width: 1200px) {
   .profile-image {
     padding: 40px;
     text-align: center;
     width: 250px;
     height: 250px;
-    border-radius: 50%;
-  }
-}
+    border-radius: 50%; } }
+
 @media screen and (max-width: 1199px) {
   .profile-image {
     padding: 30px;
     text-align: center;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-  }
-}
+    border-radius: 50%; } }
+
 .row-space {
   padding: 20px 40px;
   text-align: left;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 .row-message {
   padding: 10px 40px;
-  text-align: left;
-}
+  text-align: left; }
+
 .big-name {
   font-family: Helvetica, serif;
   font-size: 2.5em;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 #position {
   font-family: Helvetica, serif;
   font-size: 1em;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 #email {
   text-align: left;
   font-family: Helvetica, serif;
   font-size: 1em;
-  color: #203edc;
-}
+  color: #203edc; }
+
 #bio-title {
   font-family: Helvetica, serif;
   font-size: 1.5em;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 #bio-message {
   font-family: Helvetica, serif;
-  font-size: 1em;
-}
+  font-size: 1em; }
+
 /***    ***
- footer
- ***      ***/.footer {
+
+    footer
+
+***      ***/
+.footer {
   margin: 0px auto;
   padding: 20px;
   text-align: center;
   font-size: 0.8em;
   background-color: white;
-  color: black;
-}
+  color: black; }

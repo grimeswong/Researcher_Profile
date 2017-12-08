@@ -16,7 +16,7 @@
 
     <body>
       <div class="header">
-          <p class="col-sm-4 offset-sm-2">Researchers' Profile</p>
+          <a class="col-sm-4 offset-sm-2" href="{{asset('/')}}">Researchers' Profile</a>
       </div> <!-- end of header -->
 
       @yield('content')
