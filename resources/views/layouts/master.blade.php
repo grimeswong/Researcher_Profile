@@ -16,7 +16,7 @@
 
     <body>
       <div class="header">
-          <p class="col-sm-4 offset-sm-2">University Of Queensland</p>
+          <p class="col-sm-4 offset-sm-2">Researchers' Profile</p>
       </div> <!-- end of header -->
 
       @yield('content')

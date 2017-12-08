@@ -6,14 +6,14 @@
 
 @section('content')
   <div>
-      <img id="image" src="img/uq.jpg" />
+      <img id="image" src="img/research-lab.jpg" />
       <div class="col-sm-8 offset-sm-2" id="mid-block">
-          <p id="mid-title">Welcome to UQ Researcher Site<p>
+          <p id="mid-title">Welcome to Researchers' Profile<p>
       </div>
   </div> <!-- end of Upper Content -->
 
   <div class="main-content">
-      <p class="main-content-title">Researcher Profile</p>
+      <p class="main-content-title">Researchers' Profile</p>
       <p class="main-content-subtitle">Please enter your profile details<p>
 
         <form class="col-md-8 col-sm-12" id="profile-form" method="POST" action="/add_profile_action">  <!-- need to change POST later -->
