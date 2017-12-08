@@ -6,7 +6,7 @@
 
 @section('content')
   <div>
-      <img id="image" src="img/uq.jpg" />
+      <img id="image" src="img/creation-lab.jpg" />
       <div class="col-sm-8 offset-sm-2" id="mid-block">
           <p id="mid-title">Welcome to Researcher Site<p>
       </div>
