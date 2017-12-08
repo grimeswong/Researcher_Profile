@@ -38,3 +38,5 @@
   //when window detect the user is scrolling, call the function parallax
   window.addEventListener('scroll', parallax)  // first parameter is event, second parameter is the function call
 </script>
+
+@yield('script')

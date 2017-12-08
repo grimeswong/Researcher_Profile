@@ -12,7 +12,7 @@
       </div>
   </div> <!-- end of Upper Content -->
 
-  <div class="main-content">
+  <div class="main-content" id="main-content">
       <p class="main-content-title">Researcher's Profile</p>
 
 
@@ -50,4 +50,12 @@
       </div>
 
   </div> <!-- end main content -->
+@endsection
+
+@section('script')
+  <script type="text/javascript">
+    document.querySelector('#main-content').scrollIntoView({
+      behavior: 'smooth'
+    });
+  </script>
 @endsection
