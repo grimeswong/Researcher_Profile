@@ -39,17 +39,9 @@
 <script type="text/javascript">
 
 /*** Loader ***/
-/*** Function to get the document width and height and set the loader top and left position by half of them ***/
 $(window).on('load', function(e) {  // executes when complete page is fully loaded, including all frames, objects images
-// $(document).ready(function() {   // executes when HTML-Document is loaded and DOM is ready
-  // var height = $(document).outerHeight();
-  // console.log("height =" + height);
-  // $(".loader").css("top", height/2+"px");
-  // var width = $(document).outerWidth();
-  // console.log("width =" + width);
-  // $(".loader").css("left", (width/2-25)+"px");
-  jQuery(".preload").fadeOut(3000);
   jQuery(".body-wrapper").css("display", "block");
+  jQuery(".preload").fadeOut(3000);
 });
 
   var ypos, image;

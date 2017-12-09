@@ -68,15 +68,15 @@ $mainfont3: Monospace;
 
 @media screen and (max-width: 767px) {
   .loader {
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
   }
 }
 
 @media screen and (min-width: 768px) {
   .loader {
-    width: 80px;
-    height: 80px;
+    width: 4em;
+    height: 4em;
   }
 }
 
