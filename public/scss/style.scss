@@ -45,8 +45,10 @@ $mainfont3: Monospace;
   width: 100%;
   height: 100%;
   background-color: $maincolor1;
-  position: fixed;
+  position: absolute;
   top: 0px;
+  right: 0px;
+  bottom: 0px;
   left: 0px;
   z-index: 100;
 }
@@ -56,14 +58,26 @@ $mainfont3: Monospace;
   border-top: 8px solid $bordercolor;
   border-bottom: 8px solid $bordercolor;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
   animation: spin 2s linear infinite;
-  margin:0;
-  position: absolute;
+  -webket-animation: spin 2s linear infinite;
+  position: fixed;
   top: 50%;
-  left: 45%;
-  vertical-align: middle;
+  left: 50%;
+  margin-left: -16px;
+}
+
+@media screen and (max-width: 767px) {
+  .loader {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .loader {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @keyframes spin {
