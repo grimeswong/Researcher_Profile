@@ -16,7 +16,6 @@
     </head>
 
     <body>
-
       <div class="preload"> <!-- for preload screen -->
         <div class="loader">
 
@@ -33,7 +32,7 @@
         <div class="footer">
             copyright 2017
         </div>
-      <!-- </div> -->
+      
     </body>
 </html>
 
