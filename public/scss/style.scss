@@ -135,7 +135,7 @@ $mainfont3: Monospace;
 }
 
 /* Content */
-@media screen and(min-width: 768px) {
+@media screen and(min-width: 1201px) {  // for desktop
     #image {
         height:700px;
         width: $fullwidth;
@@ -144,7 +144,16 @@ $mainfont3: Monospace;
     }
 }
 
-@media screen and(max-width: 767px) {
+@media screen and(min-width: 768px) and (max-width: 1200px) { // for tablet
+    #image {
+        height:500px;
+        width: $fullwidth;
+        position: relative;    /* Must use the relative to make the parallex Scrolling */
+        z-index: -1;
+    }
+}
+
+@media screen and(max-width: 767px) { // for mobile
     #image {
         height:300px;
         width: $fullwidth;
@@ -168,9 +177,9 @@ $mainfont3: Monospace;
     }
 }
 
-@media screen and(max-width: 1200px) {
+@media screen and(min-width: 768px) and (max-width: 1200px) { // for tablet
     #mid-block {
-        margin-top: -500px;
+        margin-top: -300px;
         height:200px;
         position: absolute;
         z-index:2;
@@ -183,7 +192,7 @@ $mainfont3: Monospace;
     }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and(max-width: 767px) {
     #mid-block {
         margin-top: -150px;
         height:200px;
