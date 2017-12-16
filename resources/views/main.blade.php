@@ -16,7 +16,7 @@
       <p class="main-content-title">Researchers' Profile</p>
       <p class="main-content-subtitle">Please enter your profile details <span class="required-fields">( * required fields )</span></p>
 
-        <form class="col-md-8 col-sm-12" id="profile-form" method="POST" action="/researcher" enctype="multipart/form-data">  <!-- must have enctype for upload file -->
+        <form class="col-lg-8 col-sm-12" id="profile-form" method="POST" action="/researcher" enctype="multipart/form-data">  <!-- must have enctype for upload file -->
           {{csrf_field()}}
 
           <div class="row">
