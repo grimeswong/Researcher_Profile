@@ -13,7 +13,16 @@ class CreateResearchersTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('researchers', function (Blueprint $table) {
+          $table->increments('id');
+          $table->string('firstName');
+          $table->string('lastName');
+          $table->string('position');
+          $table->string('email')->unique;
+          $table->string('biography')->nullable();  // can be not provided
+          $table->string('image');
+          $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +32,6 @@ class CreateResearchersTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('researchers');
     }
 }
