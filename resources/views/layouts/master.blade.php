@@ -30,7 +30,7 @@
         @yield('content')
 
         <div class="footer">
-            copyright 2017
+            All right reserved &#0169 2017 -
         </div>
       </div>
     </body>
