@@ -291,6 +291,13 @@ $mainfont3: Monospace;
   font-size: 0.8em;
 }
 
+.alert {
+    // font-weight: bold;
+    font-style: italic;
+    color: red;
+}
+
+
 label {
   color: $mainthemecolor2;
   font-weight: bold;

@@ -242,6 +242,10 @@
   color: white;
   font-size: 0.8em;
 }
+.alert {
+  font-style: italic;
+  color: red;
+}
 label {
   color: white;
   font-weight: bold;
