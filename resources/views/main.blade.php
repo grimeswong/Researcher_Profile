@@ -7,7 +7,7 @@
 @section('content')
   <div>
       <img id="image" src="img/creation-lab.jpg" />
-      <div class="col-sm-8 offset-sm-2" id="mid-block">
+      <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2" id="mid-block">
           <p id="mid-title">Welcome to Researchers' Profile<p>
       </div>
   </div> <!-- end of Upper Content -->
