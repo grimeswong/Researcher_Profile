@@ -15,7 +15,10 @@
   <div class="main-content">
       <p class="main-content-title">Researchers' Profile</p>
       <p class="main-content-subtitle">Please enter your profile details<p>
-
+        @if (count($errors)>0)
+          <div style="color: red; text-align: center;"> Error Messages = {{$errors->first('firstName')}} </div>
+          <div style="color: red; text-align: center;"> Error Count = {{count($errors)}} </div>
+        @endif
         <form class="col-md-8 col-sm-12" id="profile-form" method="POST" action="/researcher" enctype="multipart/form-data">  <!-- must have enctype for upload file -->
           {{csrf_field()}}
           <div class="row">
