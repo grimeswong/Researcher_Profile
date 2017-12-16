@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Researcher;
 
 class ResearcherController extends Controller
 {
@@ -34,7 +35,28 @@ class ResearcherController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      /** Input validation **/
+
+      // dd('I\'m here');
+      // $this->validate($request, [
+      //   'firstname' =>'required|max:255',
+      //   'lastname' =>'required|max:255',
+      //   'position' =>'required|max:255',
+      //   'email'=>'required|email|max:255|unique:users',
+      //   'image' => 'required|image|max:255' // image
+      // ]);
+
+      $image_path = request()->file('image')->store('researcher_images', 'public');
+      $researcher = new Researcher();
+      $researcher->firstName = $request->firstName;
+      $researcher->lastName = $request->lastName;
+      $researcher->position = $request->position;
+      $researcher->email = $request->email;
+      $researcher->biography = $request->biography;
+      $researcher->image = $image_path;
+      // dd($researcher->firstname);
+
+      return view('profile')->with('firstname', $researcher->firstName)->with('lastname', $researcher->lastName)->with('position', $researcher->position)->with('email', $researcher->email)->with('biography', $researcher->biography)->with('image', $researcher->image);
     }
 
     /**
