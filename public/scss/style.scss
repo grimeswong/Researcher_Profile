@@ -9,9 +9,9 @@
 $fullwidth: 100%;
 
 /*** Colour ***/
-$maincolor1: rgb(73, 7, 94);    //purple
-$maincolor2: white;
-$maincolor3: grey;
+$mainthemecolor1: rgb(73, 7, 94);    //purple
+$mainthemecolor2: white;
+$mainthemecolor3: grey;
 $titlebackground: rgba(255,255,255,0.7); // white with opacity
 $bordercolor: rgba(73, 7, 94, 0.7);    // purple with opacity
 $boxshadow: $bordercolor;
@@ -44,7 +44,7 @@ $mainfont3: Monospace;
 .preload {
   width: 100%;
   height: 100%;
-  background-color: $maincolor1;
+  background-color: $mainthemecolor1;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -54,7 +54,7 @@ $mainfont3: Monospace;
 }
 
 .loader {
-  border: 8px solid $maincolor2;
+  border: 8px solid $mainthemecolor2;
   border-top: 8px solid $bordercolor;
   border-bottom: 8px solid $bordercolor;
   border-radius: 50%;
@@ -89,13 +89,13 @@ $mainfont3: Monospace;
 @media screen and(min-width: 768px) {
   .header {
       height:50px;
-      background-color:$maincolor2;
+      background-color:$mainthemecolor2;
       width: $fullwidth;
       position: fixed;
       z-index: 3;
       a {
           padding: 10px;
-          color:$maincolor1;
+          color:$mainthemecolor1;
           font-family: $mainfont1, sans-serif;
           font-weight: bold;
           font-size: 1em;
@@ -113,13 +113,13 @@ $mainfont3: Monospace;
 @media screen and(max-width: 767px) {
   .header {
       height:50px;
-      background-color:$maincolor2;
+      background-color:$mainthemecolor2;
       width: $fullwidth;
       position: fixed;
       z-index: 3;
       a {
           padding: 10px;
-          color:$maincolor1;
+          color:$mainthemecolor1;
           font-family: $mainfont1, sans-serif;
           font-weight: bold;
           font-size: 0.8em;
@@ -160,7 +160,7 @@ $mainfont3: Monospace;
         position: absolute;
         z-index:2;
         background-color: $titlebackground;
-        border-radius: 20px;
+        border-radius: 5px;
         border-color: $bordercolor;
         border: 2px;
         box-shadow: 5px 5px 2px $boxshadow;
@@ -175,7 +175,7 @@ $mainfont3: Monospace;
         position: absolute;
         z-index:2;
         background-color: $titlebackground;
-        border-radius: 20px;
+        border-radius: 5px;
         border-color: $bordercolor;
         border: 2px;
         box-shadow: 5px 5px 2px $boxshadow;
@@ -190,7 +190,7 @@ $mainfont3: Monospace;
         position: absolute;
         z-index:2;
         background-color: $titlebackground;
-        border-radius: 20px;
+        border-radius: 5px;
         border-color: $bordercolor;
         border: 2px;
         box-shadow: 5px 5px 2px $boxshadow;
@@ -203,7 +203,7 @@ $mainfont3: Monospace;
         padding: 75px;
         font-size: 3em;
         font-weight: bold;
-        color: $maincolor1;
+        color: $mainthemecolor1;
         text-align: center;
     }
 }
@@ -213,7 +213,7 @@ $mainfont3: Monospace;
         padding: 20px;
         font-size: 3em;
         font-weight: bold;
-        color: $maincolor1;
+        color: $mainthemecolor1;
         text-align: center;
     }
 }
@@ -223,7 +223,7 @@ $mainfont3: Monospace;
         padding: 20px;
         font-size: 2em;
         font-weight: bold;
-        color: $maincolor1;
+        color: $mainthemecolor1;
         text-align: center;
     }
 }
@@ -233,7 +233,7 @@ $mainfont3: Monospace;
     margin-top: -10px;    /* can minimize the gap when scrolling up and down */
     padding-bottom: 100px;
     width: 100%;
-    background-color: $maincolor1;
+    background-color: $mainthemecolor1;
     position: relative;
     z-index: 1;
   }
@@ -244,7 +244,7 @@ $mainfont3: Monospace;
     margin-top: -10px;    /* can minimize the gap when scrolling up and down */
     padding-bottom: 50px;
     width: 100%;
-    background-color: $maincolor1;
+    background-color: $mainthemecolor1;
     position: relative;
     z-index: 1;
   }
@@ -256,13 +256,13 @@ $mainfont3: Monospace;
     .main-content {
       .main-content-title {
         padding:60px;
-        color:$maincolor2;
+        color:$mainthemecolor2;
         font-size: 3em;
         font-weight: bold;
         text-align: center;
       }
       .main-content-subtitle {
-        color: $maincolor2;
+        color: $mainthemecolor2;
         font-size: 2em;
         font-weight: bold;
         text-align: center;
@@ -273,13 +273,13 @@ $mainfont3: Monospace;
 @media screen and (max-width: 767px) {
     .main-content-title {
         padding:80px;
-        color:$maincolor2;
+        color:$mainthemecolor2;
         font-size: 2em;
         font-weight: bold;
         text-align: center;
     }
     .main-content-subtitle {
-      color: $maincolor2;
+      color: $mainthemecolor2;
       font-size: 2em;
       font-weight: bold;
       text-align: center;
@@ -287,18 +287,18 @@ $mainfont3: Monospace;
 }
 
 label {
-  color: $maincolor2;
+  color: $mainthemecolor2;
   font-weight: bold;
 }
 
 #file-upload {
-  color: $maincolor2;
+  color: $mainthemecolor2;
   padding-bottom: 40px;
 
 }
 
 .form-control-file {
-  color: $maincolor2;
+  color: $mainthemecolor2;
 }
 
 
@@ -316,8 +316,8 @@ label {
     text-align: center;
     font-size: 1em;
     font-family:$mainfont1, serif;
-    background-color: $maincolor2;
-    border: 5px solid $maincolor3
+    background-color: $mainthemecolor2;
+    border: 5px solid $mainthemecolor3
   }
 }
 
@@ -328,8 +328,8 @@ label {
     text-align: center;
     font-size: 1em;
     font-family:$mainfont1, serif;
-    background-color: $maincolor2;
-    border: 5px solid $maincolor3
+    background-color: $mainthemecolor2;
+    border: 5px solid $mainthemecolor3
   }
 }
 
@@ -411,6 +411,6 @@ label {
   padding:20px;
   text-align: center;
   font-size: 0.8em;
-  background-color: $maincolor2;
+  background-color: $mainthemecolor2;
   color: black;
 }
