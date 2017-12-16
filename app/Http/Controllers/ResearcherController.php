@@ -38,8 +38,8 @@ class ResearcherController extends Controller
 
       /** Input validation **/
       $this->validate($request, [
-        'firstname' =>'required|min:1|max:255',
-        'lastname' =>'required|max:255',
+        'firstName' =>'required|min:1|max:255',
+        'lastName' =>'required|max:255',
         'position' =>'required|max:255',
         'email'=>'required|email|max:255|unique:users',
         'image' => 'image|max:255' // image
