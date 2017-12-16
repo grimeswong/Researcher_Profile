@@ -14,7 +14,7 @@
 
   <div class="main-content">
       <p class="main-content-title">Researchers' Profile</p>
-      <p class="main-content-subtitle">Please enter your profile details<p>
+      <p class="main-content-subtitle">Please enter your profile details <span class="required-fields">( * required fields )</span></p>
         @if (count($errors)>0)
           <div style="color: red; text-align: center;"> Error Messages = {{$errors->first('firstName')}} </div>
           <div style="color: red; text-align: center;"> Error Messages = {{$errors->first('lastName')}} </div>
@@ -26,29 +26,29 @@
           {{csrf_field()}}
           <div class="row">
             <div class="form-group col-sm-6">
-              <label class="control-label">First Name</label>
+              <label class="control-label">First Name *</label>
               <input class="form-control" type="text" name="firstName"placeholder="First Name">
             </div>
             <div class="form-group col-sm-6">
-              <label class="control-label">Last Name</label>
+              <label class="control-label">Last Name *</label>
               <input class="form-control" type="text" name="lastName"placeholder="Last Name">
             </div>
           </div>
 
           <div class="row">
             <div class="form-group col-sm-6">
-              <label class="control-label">Position</label>
+              <label class="control-label">Position *</label>
               <input class="form-control" type="text" name="position" placeholder="Position">
             </div>
             <div class="form-group col-sm-6">
-              <label class="control-label">Email</label>
+              <label class="control-label">Email *</label>
               <input class="form-control" type="text" name="email" placeholder="name@example.com">
             </div>
           </div>
 
           <div class="row">
             <div class="form-group col-sm-12">
-              <label class="control-label">Biography</label>
+              <label class="control-label">Biography *</label>
               <textarea class="form-control" name="biography" rows="5" placeholder="something about yourself"></textarea>
             </div>
           </div>

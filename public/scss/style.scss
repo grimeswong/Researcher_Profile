@@ -286,6 +286,11 @@ $mainfont3: Monospace;
     }
 }
 
+.required-fields {
+  color: $mainthemecolor2;
+  font-size: 0.8em;
+}
+
 label {
   color: $mainthemecolor2;
   font-weight: bold;

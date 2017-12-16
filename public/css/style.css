@@ -238,6 +238,10 @@
     text-align: center;
   }
 }
+.required-fields {
+  color: white;
+  font-size: 0.8em;
+}
 label {
   color: white;
   font-weight: bold;
