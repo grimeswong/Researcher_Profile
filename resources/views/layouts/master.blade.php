@@ -13,6 +13,10 @@
        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+       <!-- Extenal link to javascript file -->
+       <script src="js/custom.js"></script>
+
     </head>
 
     <body>
@@ -35,24 +39,3 @@
       </div>
     </body>
 </html>
-
-<script type="text/javascript">
-
-/*** Loader ***/
-$(window).on('load', function(e) {  // executes when complete page is fully loaded, including all frames, objects images
-  jQuery(".body-wrapper").css("display", "block");
-  jQuery(".preload").fadeOut(3000);
-});
-
-  var ypos, image;
-  function parallax () {
-      ypos = window.pageYOffset;
-      image = document.getElementById('image');
-      image.style.top = ypos * .8 + 'px'; //don't go above 1
-  }
-
-  //when window detect the user is scrolling, call the function parallax
-  window.addEventListener('scroll', parallax)  // first parameter is event, second parameter is the function call
-</script>
-
-@yield('script')

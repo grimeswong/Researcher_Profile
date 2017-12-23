@@ -46,14 +46,18 @@ class ResearcherController extends Controller
         'image' => 'image|max:255' // image
       ]);
 
-      $image_path = request()->file('image')->store('researcher_images', 'public');
+      if(request()->file('image') != null) {
+        $image_path = request()->file('image')->store('researcher_images', 'public');
+        $researcher->image = $image_path;
+      }
+
       $researcher = new Researcher();
       $researcher->firstName = $request->firstName;
       $researcher->lastName = $request->lastName;
       $researcher->position = $request->position;
       $researcher->email = $request->email;
       $researcher->biography = $request->biography;
-      $researcher->image = $image_path;
+
 
       return view('profile')->with('firstname', $researcher->firstName)->with('lastname', $researcher->lastName)->with('position', $researcher->position)->with('email', $researcher->email)->with('biography', $researcher->biography)->with('image', $researcher->image);
     }

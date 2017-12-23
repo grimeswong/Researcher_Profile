@@ -50,11 +50,3 @@
 
   </div> <!-- end main content -->
 @endsection
-
-@section('script')
-  <script type="text/javascript">
-    document.querySelector('#main-content').scrollIntoView({
-      behavior: 'smooth'
-    });
-  </script>
-@endsection
