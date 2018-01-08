@@ -134,33 +134,21 @@ $mainfont3: Monospace;
   }
 }
 
+#image {
+  width: $fullwidth;
+  position: relative; /* Must use the relative to make the parallex Scrolling */
+  z-index: -1;
+  @media screen and(min-width: 1201px) {  // for desktop
+    height:700px;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1200px) { // for tablet
+    height:500px;
+  }
+  @media screen and(max-width: 767px) { // for mobile
+    height:300px;
+  }
+}
 /* Content */
-@media screen and(min-width: 1201px) {  // for desktop
-    #image {
-        height:700px;
-        width: $fullwidth;
-        position: relative;    /* Must use the relative to make the parallex Scrolling */
-        z-index: -1;
-    }
-}
-
-@media screen and(min-width: 768px) and (max-width: 1200px) { // for tablet
-    #image {
-        height:500px;
-        width: $fullwidth;
-        position: relative;    /* Must use the relative to make the parallex Scrolling */
-        z-index: -1;
-    }
-}
-
-@media screen and(max-width: 767px) { // for mobile
-    #image {
-        height:300px;
-        width: $fullwidth;
-        position: relative;    /* Must use the relative to make the parallex Scrolling */
-        z-index: -1;
-    }
-}
 
 @media screen and(min-width: 1201px) {
     #mid-block {
