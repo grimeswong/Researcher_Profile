@@ -138,6 +138,11 @@ $mainfont3: Monospace;
   width: $fullwidth;
   position: relative; /* Must use the relative to make the parallex Scrolling */
   z-index: -1;
+  background-image: url("/img/creation-lab.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   @media screen and(min-width: 1201px) {  // for desktop
     height:700px;
   }
@@ -148,8 +153,8 @@ $mainfont3: Monospace;
     height:300px;
   }
 }
-/* Content */
 
+/* Content */
 @media screen and(min-width: 1201px) {
     #mid-block {
         margin-top: -500px;
