@@ -39,6 +39,7 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 /* custome sass complier */
 SassCompiler::run("scss/", "css/");
 
+
 /*
 |--------------------------------------------------------------------------
 | Run The Application

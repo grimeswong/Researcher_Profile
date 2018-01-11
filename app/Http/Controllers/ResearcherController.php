@@ -14,7 +14,8 @@ class ResearcherController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('main');
     }
 
     /**
@@ -36,32 +37,34 @@ class ResearcherController extends Controller
     public function store(Request $request)
     {
 
-    /** Input validation **/
-    $this->validate($request, [
-      'firstName' =>'required|max:63',
-      'lastName' =>'required|max:63',
-      'position' =>'required|max:127',
-      'email'=>'required|email|max:63|unique:users',
-      'biography'=>'required|max:1023',
-      'image' => 'image|max:255' // image
-    ]);
+
+      /** Input validation **/
+      $this->validate($request, [
+        'firstName' =>'required|max:63',
+        'lastName' =>'required|max:63',
+        'position' =>'required|max:127',
+        'email'=>'required|email|max:63|unique:users',
+        'biography'=>'required|max:1023',
+        'image' => 'image|max:255' // image
+      ]);
 
 
-    $researcher = new Researcher();
-    $researcher->firstName = $request->firstName;
-    $researcher->lastName = $request->lastName;
-    $researcher->position = $request->position;
-    $researcher->email = $request->email;
-    $researcher->biography = $request->biography;
+      $researcher = new Researcher();
+      $researcher->firstName = $request->firstName;
+      $researcher->lastName = $request->lastName;
+      $researcher->position = $request->position;
+      $researcher->email = $request->email;
+      $researcher->biography = $request->biography;
 
-    if(request()->file('image') != null) {
-      $image_path = request()->file('image')->store('researcher_images', 'public');
-      // dd($image_path);
-      $researcher->image = $image_path;
-    }
+      if(request()->file('image') != null) {
+        $image_path = request()->file('image')->store('researcher_images', 'public');
+        // dd($image_path);
+        $researcher->image = $image_path;
+      }
 
 
-    return view('profile')->with('firstname', $researcher->firstName)->with('lastname', $researcher->lastName)->with('position', $researcher->position)->with('email', $researcher->email)->with('biography', $researcher->biography)->with('image', $researcher->image);
+      return view('profile')->with('firstname', $researcher->firstName)->with('lastname', $researcher->lastName)->with('position', $researcher->position)->with('email', $researcher->email)->with('biography', $researcher->biography)->with('image', $researcher->image);
+
     }
 
     /**

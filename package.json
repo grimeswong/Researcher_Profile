@@ -17,5 +17,27 @@
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
     "vue": "^2.1.10"
-  }
+  },
+  "name": "shadowgrimes",
+  "description": "<p align=\"center\"><img src=\"https://laravel.com/assets/img/components/logo-laravel.svg\"></p>",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grimeswong/researcherProfile.git"
+  },
+  "keywords": [
+    "researcher",
+    "laravel",
+    "php"
+  ],
+  "author": "shadowgrimes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grimeswong/researcherProfile/issues"
+  },
+  "homepage": "https://github.com/grimeswong/researcherProfile#readme"
 }
