@@ -1,0 +1,355 @@
+/***
+ StyleSheet.scss
+ Author: Shadow Grimes
+ ***//*** Layout ***//*** Colour ***//*** Fonts ****//* First setting clear the user agent default setting *//* reset to "0" to avoid broswer setting */* {
+  margin: 0px auto;
+  padding: 0px;
+}
+/*********************
+ Main page
+ **********************/.container {
+  margin: 0px auto;
+}
+.preload {
+  width: 100%;
+  height: 100%;
+  background-color: #49075e;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+.loader {
+  border: 8px solid white;
+  border-top: 8px solid rgba(73, 7, 94, 0.7);
+  border-bottom: 8px solid rgba(73, 7, 94, 0.7);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  -webket-animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+}
+@media screen and (max-width: 767px) {
+  .loader {
+    width: 2em;
+    height: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .loader {
+    width: 4em;
+    height: 4em;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Header */@media screen and (min-width: 768px) {
+  .header {
+    height: 50px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+  }
+  .header a {
+    padding: 10px;
+    color: #49075e;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    float: left;
+  }
+  .header a:hover {
+    color: rgba(73, 7, 94, 0.7);
+  }
+  .header a:link {
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    height: 50px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+  }
+  .header a {
+    padding: 10px;
+    color: #49075e;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    float: left;
+  }
+  .header a:hover {
+    color: rgba(73, 7, 94, 0.7);
+  }
+  .header a:link {
+    text-decoration: none;
+  }
+}
+#image {
+  width: 100%;
+  position: relative;
+  /* Must use the relative to make the parallex Scrolling */
+  z-index: -1;
+  background-image: url("/img/creation-lab.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 1201px) {
+  #image {
+    height: 700px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #image {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #image {
+    height: 300px;
+  }
+}
+/* Content */@media screen and (min-width: 1201px) {
+  #mid-block {
+    margin-top: -500px;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    border-color: rgba(73, 7, 94, 0.7);
+    border: 2px;
+    box-shadow: 5px 5px 2px rgba(73, 7, 94, 0.7);
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #mid-block {
+    margin-top: -300px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    border-color: rgba(73, 7, 94, 0.7);
+    border: 2px;
+    box-shadow: 5px 5px 2px rgba(73, 7, 94, 0.7);
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 767px) {
+  #mid-block {
+    margin-top: -150px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    border-color: rgba(73, 7, 94, 0.7);
+    border: 2px;
+    box-shadow: 5px 5px 2px rgba(73, 7, 94, 0.7);
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #mid-title {
+    padding: 75px;
+    font-size: 3em;
+    font-weight: bold;
+    color: #49075e;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #mid-title {
+    padding: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    color: #49075e;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  #mid-title {
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #49075e;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-content {
+    margin-top: -10px;
+    /* can minimize the gap when scrolling up and down */
+    padding-bottom: 100px;
+    width: 100%;
+    background-color: #49075e;
+    position: relative;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-content {
+    margin-top: -10px;
+    /* can minimize the gap when scrolling up and down */
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #49075e;
+    position: relative;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-content .main-content-title {
+    padding: 60px;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+  }
+  .main-content .main-content-subtitle {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-content-title {
+    padding: 80px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  .main-content-subtitle {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.required-fields {
+  color: white;
+  font-size: 0.8em;
+}
+.alert {
+  font-style: italic;
+  color: red;
+}
+label {
+  color: white;
+  font-weight: bold;
+}
+#file-upload {
+  color: white;
+  padding-bottom: 40px;
+}
+.form-control-file {
+  color: white;
+}
+/*********************
+ Profile page
+ **********************/@media screen and (max-width: 767px) {
+  .profile-block {
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    font-size: 1em;
+    font-family: Helvetica, serif;
+    background-color: white;
+    border: 5px solid grey;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile-block {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    font-family: Helvetica, serif;
+    background-color: white;
+    border: 5px solid grey;
+  }
+}
+@media screen and (max-width: 767px) {
+  .profile-image {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .profile-image {
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .profile-image {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-wrap {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content-wrap {
+    text-align: left;
+  }
+}
+.big-name {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.role {
+  font-weight: bold;
+}
+.separator {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.email {
+  color: #203edc;
+}
+.bio-title {
+  padding-top: 30px;
+  font-weight: bold;
+}
+.bio-message {
+  margin-bottom: 30px;
+}
+/*********************
+ Footer
+ **********************/.footer {
+  margin: 0px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8em;
+  background-color: white;
+  color: black;
+}
